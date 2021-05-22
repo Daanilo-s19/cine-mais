@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:getx_pattern/app/bindings/details_binding.dart';
 import 'package:getx_pattern/app/pages/onboarding/onboarding_page.dart';
 import 'package:getx_pattern/app/pages/splash/splash_pages.dart';
 

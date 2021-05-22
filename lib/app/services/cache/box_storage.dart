@@ -1,24 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:getx_pattern/app/services/cache/cache_key.dart';
 import 'package:meta/meta.dart';
 import 'package:get_storage/get_storage.dart';
 
-class BoxStorage {
+import 'cache_key.dart';
+
+class BoxStorage<T> {
   final box = GetStorage(CacheKey.BOXCACHE);
 
-  Future<void> saveData({@required String key, @required dynamic value}) async {
+  Future<void> saveData({@required String key, @required T value}) async {
     await box.write(key, value);
   }
 
-  Future<Map<String, dynamic>> fetchData({@required String key}) async {
-    return await box.read(key);
-  }
-
-  Future<String> fetchStringData({@required String key}) async {
-    return await box.read(key);
-  }
-
-  Future<List<dynamic>> fetchDynamicData({@required String key}) async {
+  Future<T> fetchData({@required String key}) async {
     return await box.read(key);
   }
 

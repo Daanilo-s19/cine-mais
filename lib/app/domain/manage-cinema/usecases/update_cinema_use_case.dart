@@ -1,5 +1,4 @@
 import 'package:dartz/dartz.dart';
-import 'package:getx_pattern/app/domain/cinema/entities/cinema_entity.dart';
 import 'package:getx_pattern/app/domain/manage-cinema/errors/error.dart';
 import 'package:getx_pattern/app/domain/manage-cinema/repositories/manage_cinema_repository.dart';
 
